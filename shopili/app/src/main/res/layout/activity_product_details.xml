@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/whiteColor"
+    tools:context=".ProductDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="50dp">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/img1"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="8pt"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/b1"
+                    android:layout_width="115dp"
+                    android:layout_height="50dp"
+                    android:text="guarantee"
+                    android:onClick="priceG"
+                    android:textSize="5pt"
+                    android:textColor="@color/colorAccent"
+                    />
+
+                <Button
+                    android:id="@+id/b2"
+                    android:layout_width="115dp"
+                    android:layout_height="50dp"
+                    android:textSize="5pt"
+                    android:text="no guarantee"
+                    android:onClick="priceWG"
+                    android:textColor="@color/colorAccent"
+                    />
+                <TextView
+                    android:id="@+id/priceval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="price value"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="Description" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oky here we are trying to write a test random text  this sounds good huh " />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="delivery" />
+
+            <TextView
+                android:id="@+id/delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="free delivery" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="Guarantee" />
+
+            <TextView
+                android:id="@+id/guarantee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="60 days until you decide "
+                />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="Link" />
+
+            <TextView
+                android:id="@+id/link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:autoLink="web"
+                android:text="https://www.google.com/" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
